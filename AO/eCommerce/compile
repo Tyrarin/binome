@@ -1,0 +1,4 @@
+#!/bin/sh
+
+javac -d classes src/*.java
+java -cp classes/ Main
