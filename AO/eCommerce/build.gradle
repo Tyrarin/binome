@@ -1,0 +1,25 @@
+
+
+plugins {
+  id 'java'
+  id 'application'
+}
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+repositories {
+    jcenter()
+    mavenCentral()
+}
+
+dependencies {
+  testCompile 'junit:junit:4.12'
+  compile 'com.googlecode.json-simple:json-simple:1.1.1'
+}
+
+mainClassName = 'Main'
+
+run{
+  standardInput = System.in
+}
